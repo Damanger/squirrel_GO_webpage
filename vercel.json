@@ -1,0 +1,11 @@
+{
+    "functions": {
+        "api/**/*.go": {
+            "runtime": "go1.x"
+        }
+    },
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/(.*)", "dest": "/api/index" }
+    ]
+}
