@@ -1,7 +1,7 @@
 {
     "functions": {
-        "api/**/*.go": {
-            "runtime": "go1.x"
+        "api/index.go": {
+            "runtime": "vercel-go@0.5.0"
         }
     },
     "routes": [
