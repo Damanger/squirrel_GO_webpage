@@ -1,11 +1,12 @@
 {
     "functions": {
         "api/**/*.go": {
-            "runtime": "go1.x"
+            "runtime": "vercel-plugin-go@0.2.0"
         }
     },
     "routes": [
         { "handle": "filesystem" },
-        { "src": "/(.*)", "dest": "/api/index" }
+        { "src": "/api/.*", "dest": "/api/index" },
+        { "src": "/(.*)", "dest": "/public/$1" }
     ]
 }
